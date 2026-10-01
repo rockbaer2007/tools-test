@@ -1,0 +1,21 @@
+{
+  "format": "ha-grafik-tool-package",
+  "apiVersion": "0.1",
+  "id": "ugso.tools-test",
+  "name": "UGSo Tools Test",
+  "version": "0.1.0",
+  "license": "MIT",
+  "icon": "icons/tools-test.svg",
+  "tools": [
+    {
+      "id": "ugso.tools-test/page-color",
+      "definitionVersion": "0.1",
+      "label": "Test-Seitenfarbe",
+      "description": "Zeigt eine Vorschau und setzt die Hintergrundfarbe der aktuellen Seite.",
+      "icon": "icons/tools-test.svg",
+      "context": "page",
+      "capabilities": ["project.read", "project.write"],
+      "action": { "kind": "set-page-background", "defaultColor": "#224466" }
+    }
+  ]
+}
